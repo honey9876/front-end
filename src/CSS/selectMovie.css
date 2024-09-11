@@ -1,14 +1,14 @@
-.SM_heading{
+.SM_heading {
     width: 100%;
     font-size: 22px;
-    color: #000;
-}
-
-.SM_main_container{
+    color: black;
+  }
+  
+  .SM_main_container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    color: #000;
+    color: black;
 }

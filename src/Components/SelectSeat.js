@@ -3,7 +3,6 @@ import { seats } from '../Data'
 import Seatlnputs from './Seatlnputs'
 import '../CSS/SelectSeats.css'
 
-
 const SelectSeat = () => {
   return (
     <div className='SS_wrapper'>
@@ -14,10 +13,10 @@ const SelectSeat = () => {
            <Seatlnputs key ={index} text={el}/>
           )
         })}
-      </div>
-      
+      </div>      
     </div>
   )
-}
-
+} 
 export default SelectSeat
+
+
