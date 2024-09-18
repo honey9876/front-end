@@ -1,22 +1,36 @@
-import React from 'react'
-import { seats } from '../Data'
-import Seatlnputs from './Seatlnputs'
-import '../CSS/SelectSeats.css'
+import React, { useState, useContext } from "react";
+import { seats } from "../data";
+import "../Css/SelectSeats.css";
+import BsContext from "../Context/BsContext";
+import SeatsInput from "./SeatsInput";
 
-const SelectSeat = () => {
+const SelectSeats = () => {
+  const [seat, changeSeats] = useState([]);
+  const context = useContext(BsContext);
+  const { noOfSeat, changeNoOfSeats } = context;
+
   return (
-    <div className='SS_wrapper'>
-      <h1 className='SS_heading'>Select Seats :</h1>
-      <div className='SS_main_container'>
-        {seats.map((el,index) => {
-          return(
-           <Seatlnputs key ={index} text={el}/>
-          )
-        })}
-      </div>      
-    </div>
-  )
-} 
-export default SelectSeat
+    <>
+      <div className="SS_wrapper">
+        <h1 className="SS_heading">Select Seats :-</h1>
+        <div className="SS_main_container">
+          {seats.map((el, index) => {
+            return (
+              <SeatsInput
+                seat={seat}
+                key={index}
+                index={index}
+                changeSeats={changeSeats}
+                noOfSeat={noOfSeat}
+                text={el}
+                changeNoOfSeats={changeNoOfSeats}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
+};
 
-
+export default SelectSeats;
