@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/SeatsInput.css";
+import '../CSS/SeatInputs.css'; 
 
 const SeatsInput = ({
   changeNoOfSeats,

@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { seats } from "../data";
-import "../Css/SelectSeats.css";
+import "../CSS/SelectSeats.css";
 import BsContext from "../Context/BsContext";
-import SeatsInput from "./SeatsInput";
+import SeatsInput from "./Seatlnputs";
 
 const SelectSeats = () => {
   const [seat, changeSeats] = useState([]);

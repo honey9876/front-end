@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import RadioComponent from "./RadioComponent";
 import { slots } from "../data";
-import "../Css/TimeShedule.css";
+import "../CSS/TimeShedule.css";
 import BsContext from "../Context/BsContext";
 
 const TimeShedule = () => {

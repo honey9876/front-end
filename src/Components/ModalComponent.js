@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import BsContext from "../Context/BsContext";
-import "../Css/ModalComponent.css";
+import "../CSS/ModalComponent.css";
 
 function Modal(props) {
   const context = useContext(BsContext);

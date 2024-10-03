@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import "../Css/LastBookingDetails.css"; 
+import "../CSS/LastBookingDetails.css"; 
 import BsContext from "../Context/BsContext"; 
 import { seats } from "../data"; 
 const LastBookingDetails = () => {
